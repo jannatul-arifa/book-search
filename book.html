@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Archive</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+    
+      
+      <div id="search-section">
+        <h1 id="welcome">
+          Welcome to Book Archive <br />
+          Search for your desire books
+        <input
+          type="text"
+          placeholder="Write topic to search books"
+          id="input-search"
+        />
+        <br />
+        <button id="btn-search">Search books</button>
+        
+        <!-- ********************************************
+                 spinner created for loading time 
+          **********************************************-->
+        <h3 id="loader"> <span><div class="spinner-border" role="status" style="color: black;">
+          
+        </div></span> Please wait few seconds while the data is loading...</h3>
+      </div>
+    </header>
+    <main>
+      
+      <h3 id="error-msg">Ops! some problem occured!</h3>
+      <h3 id="total-search" style="text-align: center;"></h3>
+      <div class="container">
+        <h3 id="total-search"></h3>
+<!-- **************************************************************
+  div created where all the books will be shown
+****************************************************************** -->
+        <div class="books-container"></div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
